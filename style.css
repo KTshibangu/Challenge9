@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(233, 47%, 7%);
+}
+
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 540px;
+    height: 446px;
+    padding: 60px 80px 40px 80px;
+    background: hsl(244, 38%, 16%);
+    color: white;
+    border-radius: 10px 0 0 10px;
+    font-family: 'Inter';
+}
+
+
+.left h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+
+.left span {
+    color: hsl(277, 64%, 61%);
+}
+
+
+
+.left p {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+.stats h4 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+
+.stats span {
+    color: white;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.right {
+    position: relative;
+    width: 540px;
+    height: 446px;
+}
+
+
+.right img {
+    display: block;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%, 0.5);
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+@media screen and (max-width: 720px) {
+    body {
+        min-height: 100vh;
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        position: relative;
+        width: 260px;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .right img {
+        width: 260px;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+
+
+    .left {
+        width: 260px;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+
+
+    .left h2 {
+        font-size: 22px;
+        letter-spacing: 0;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+
+    .left p {
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 14px;
+    }
+
+
+    .stats h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .stats span {
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
